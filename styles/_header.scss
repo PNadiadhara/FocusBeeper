@@ -1,0 +1,25 @@
+// able to seperate css files for ease of reading
+
+// mixins for common css prefs
+
+@mixin flexCenter {
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+header {
+    @include flexCenter();
+    background-color: lightblue;
+    height: 100vh;
+
+    // Sass allows for nesting
+    button {
+        background : $primaryBtn;
+        &:hover {
+            background: red;
+        }
+    }
+}

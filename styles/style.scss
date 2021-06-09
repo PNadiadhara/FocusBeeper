@@ -1,19 +1,12 @@
-//$variable: allows for variables to save info i.e. colors to make consistnacy easier
+// able to seperate css files for ease of reading
 
-$primaryBtn : rgb(56,146,142);
+@import "./variables";
+@import "./header";
 
-header {
-    background-color: lightblue;
-    display: flex;
-    justify-content: center; 
-    // Sass allows for nesting
-    button {
-        background : $primaryBtn;
-        &:hover {
-            background: red;
-        }
-    }
+
+.contact {
+    @include flexCenter();
+
 }
-
 
 

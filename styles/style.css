@@ -1,4 +1,5 @@
 header {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,8 +9,13 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: lightblue;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: red;
   height: 100vh;
+  color: #3a2a2a;
 }
 
 header button {
@@ -21,6 +27,7 @@ header button:hover {
 }
 
 .contact {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,5 +37,10 @@ header button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: red;
 }
 /*# sourceMappingURL=style.css.map */

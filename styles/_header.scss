@@ -2,18 +2,24 @@
 
 // mixins for common css prefs
 
-@mixin flexCenter {
+// note the ; on at the end of import required to avoid comp errors
+@import "./variables";
 
+@mixin flexCenter($direction, $background) {
+    height: 100vh;
     display: flex;
     justify-content: center; 
     align-items: center;
-
+    flex-direction: $direction;
+    background: $background;
 }
 
 header {
-    @include flexCenter();
-    background-color: lightblue;
+    @include flexCenter(column, red);
+
+    
     height: 100vh;
+    color: $textColor;
 
     // Sass allows for nesting
     button {
